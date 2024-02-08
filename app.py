@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(layout='wide',page_title='StartUp Analysis')
 
-df = pd.read_csv(r'C:\Users\jayma\OneDrive\Desktop\Startup Funding project\dataset\startup_cleaned.csv')
+#url = "https://drive.google.com/file/d/1oWNd33JXCK8OLVHTueFuEA-jbW9GXwPC/view?usp=drive_link"
+df = pd.read_csv(r"C:\Users\jayma\OneDrive\One drive backup\Startup Funding project\startup_cleaned.csv")
 df['date'] = pd.to_datetime(df['date'],errors='coerce')
 df['month'] = df['date'].dt.month
 df['year'] = df['date'].dt.year
